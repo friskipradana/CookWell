@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CookWell</string>
+    <string name="bahan_bahan">Bahan - Bahan</string>
+    <string name="langkah_langkah">Langkah - Langkah</string>
+    <string name="icon_lokasi_desk">iconlokasi</string>
+    <string name="header_desk">header desk</string>
+    <string name="my_name">Friski Pradana</string>
+    <string name="my_email">friskipradana8@gmail.com</string>
+</resources>
