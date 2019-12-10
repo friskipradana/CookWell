@@ -4,6 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AppCenter.start(getApplication(), "d6ec3e57-d63d-4752-839a-689d12c0b22c",
+                Analytics.class, Crashes.class);
 
         getSupportActionBar().setLogo(R.drawable.ic_chef);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
